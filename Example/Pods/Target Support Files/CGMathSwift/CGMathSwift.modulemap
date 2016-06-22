@@ -1,0 +1,6 @@
+framework module CGMathSwift {
+  umbrella header "CGMathSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
