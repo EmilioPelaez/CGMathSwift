@@ -1,5 +1,5 @@
 //
-//  CGMathSwift.swift
+//  CGMath.swift
 //  CGMathSwift
 //
 //  Created by Emilio Peláez on 6/22/16.

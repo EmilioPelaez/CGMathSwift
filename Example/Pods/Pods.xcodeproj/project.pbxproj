@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		078C86DD2FAE056D46F193FDE1E7691B /* CGMathSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3676320BB2D176A3AB3F0BE17BED8 /* CGMathSwift.swift */; };
+		078C86DD2FAE056D46F193FDE1E7691B /* CGMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3676320BB2D176A3AB3F0BE17BED8 /* CGMath.swift */; };
 		07AFE6CA86A08B9ECE3E5EE8243BA4F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		29D6D744D5567FED7111567DC19A2E15 /* Pods-CGMathSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E41B667D419702D85869B660683A5BBD /* Pods-CGMathSwift_Tests-dummy.m */; };
 		4EAC0D32199DF2FF92355F1FDC6B3D8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -50,7 +50,7 @@
 		689DFD1FA93974224366DC17A27D0C85 /* Pods-CGMathSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CGMathSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		73C88107FC8EBD0AABA693CF6845EA7C /* Pods-CGMathSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CGMathSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		75CFAAEB4B3E573B603A8B20FDC87EE3 /* CGMathSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CGMathSwift-umbrella.h"; sourceTree = "<group>"; };
-		75E3676320BB2D176A3AB3F0BE17BED8 /* CGMathSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGMathSwift.swift; sourceTree = "<group>"; };
+		75E3676320BB2D176A3AB3F0BE17BED8 /* CGMath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGMath.swift; sourceTree = "<group>"; };
 		7B6C57660E03B13B58E2B6653574C5FC /* Pods_CGMathSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGMathSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		810D70C041B615782D4936B98A0A4536 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		868096AD93636FAA6715443FFC70EB2F /* Pods-CGMathSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CGMathSwift_Example-dummy.m"; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		28DD79B20FCCF3F0007B7BC83EC58620 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				75E3676320BB2D176A3AB3F0BE17BED8 /* CGMathSwift.swift */,
+				75E3676320BB2D176A3AB3F0BE17BED8 /* CGMath.swift */,
 				C806C3401DD58C9D0057E439 /* Float.swift */,
 				C806C3421DD58CA40057E439 /* CGFloat.swift */,
 				C806C3441DD58CAD0057E439 /* Double.swift */,
@@ -357,7 +357,7 @@
 			files = (
 				C806C3431DD58CA40057E439 /* CGFloat.swift in Sources */,
 				FDC2FE6C7BE6E9539BACCE10C95AE08A /* CGMathSwift-dummy.m in Sources */,
-				078C86DD2FAE056D46F193FDE1E7691B /* CGMathSwift.swift in Sources */,
+				078C86DD2FAE056D46F193FDE1E7691B /* CGMath.swift in Sources */,
 				C806C34B1DD58F740057E439 /* CGSize.swift in Sources */,
 				C806C3451DD58CAD0057E439 /* Double.swift in Sources */,
 				C806C3491DD58F190057E439 /* CGPoint.swift in Sources */,
