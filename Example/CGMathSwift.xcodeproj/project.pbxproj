@@ -15,6 +15,12 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* CGMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* CGMathTests.swift */; };
+		C806C3561DD59B530057E439 /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806C3501DD59B370057E439 /* CGFloatTests.swift */; };
+		C806C3571DD59B530057E439 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806C3521DD59B400057E439 /* CGPointTests.swift */; };
+		C806C3581DD59B530057E439 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806C3541DD59B4D0057E439 /* CGRectTests.swift */; };
+		C806C35B1DD59B5E0057E439 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806C3591DD59B5E0057E439 /* CGSizeTests.swift */; };
+		C806C35E1DD59B690057E439 /* DoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806C35C1DD59B690057E439 /* DoubleTests.swift */; };
+		C806C3611DD59B740057E439 /* FloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806C35F1DD59B740057E439 /* FloatTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		87F3A8A6A15BCDB83C7D8D31 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8A8347FEB3DEFA95FBCA444A /* CGMathSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CGMathSwift.podspec; path = ../CGMathSwift.podspec; sourceTree = "<group>"; };
 		A63DF678473800972E56310D /* Pods-CGMathSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGMathSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CGMathSwift_Tests/Pods-CGMathSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C806C3501DD59B370057E439 /* CGFloatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
+		C806C3521DD59B400057E439 /* CGPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
+		C806C3541DD59B4D0057E439 /* CGRectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
+		C806C3591DD59B5E0057E439 /* CGSizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
+		C806C35C1DD59B690057E439 /* DoubleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTests.swift; sourceTree = "<group>"; };
+		C806C35F1DD59B740057E439 /* FloatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatTests.swift; sourceTree = "<group>"; };
 		CCD7E74611615278A695F380 /* Pods-CGMathSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGMathSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CGMathSwift_Example/Pods-CGMathSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ED55897176AD498BE7F92DED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,7 +147,13 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C806C3501DD59B370057E439 /* CGFloatTests.swift */,
 				607FACEB1AFB9204008FA782 /* CGMathTests.swift */,
+				C806C3521DD59B400057E439 /* CGPointTests.swift */,
+				C806C3541DD59B4D0057E439 /* CGRectTests.swift */,
+				C806C3591DD59B5E0057E439 /* CGSizeTests.swift */,
+				C806C35C1DD59B690057E439 /* DoubleTests.swift */,
+				C806C35F1DD59B740057E439 /* FloatTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -370,7 +388,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C806C3561DD59B530057E439 /* CGFloatTests.swift in Sources */,
+				C806C3611DD59B740057E439 /* FloatTests.swift in Sources */,
+				C806C3571DD59B530057E439 /* CGPointTests.swift in Sources */,
+				C806C35B1DD59B5E0057E439 /* CGSizeTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* CGMathTests.swift in Sources */,
+				C806C35E1DD59B690057E439 /* DoubleTests.swift in Sources */,
+				C806C3581DD59B530057E439 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
