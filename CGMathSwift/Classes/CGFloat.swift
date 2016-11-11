@@ -18,7 +18,7 @@ public func inverseLerp(min: CGFloat, max: CGFloat, value: CGFloat) -> CGFloat {
 
 extension CGFloat {
 	public func clamp(min: CGFloat = 0, max: CGFloat = 1) -> CGFloat {
-		return Swift.max(min, Swift.min(max, self))
+		return CGMathSwift.clamp(value: self, min: min, max: max)
 	}
 	
 	public func remap(fromRange from: (start: CGFloat, end: CGFloat), toRange to: (start: CGFloat, end: CGFloat)) -> CGFloat {
