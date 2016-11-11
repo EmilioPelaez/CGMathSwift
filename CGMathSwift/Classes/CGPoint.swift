@@ -20,7 +20,7 @@ extension CGPoint {
 	
 	public var normalized: CGPoint {
 		let m = magnitude
-		return CGPoint(x: x / m, y: y / m)
+		return self/m
 	}
 	
 	mutating public func normalize() {
@@ -28,19 +28,18 @@ extension CGPoint {
 		x /= m
 		y /= m
 	}
+	
+	static func add(_ points: [CGPoint]) -> CGPoint {
+		return points.reduce(CGPoint.zero, +)
+	}
+	
+	static func average(_ points: [CGPoint]) -> CGPoint {
+		return CGPoint.add(points) / CGFloat(points.count)
+	}
 }
 
 public func +(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 	return CGPoint(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
-}
-
-public func +(lhs: CGPoint, rhs: [CGPoint]) -> CGPoint {
-	var point = lhs
-	rhs.forEach {
-		point.x += $0.x
-		point.y += $0.y
-	}
-	return point
 }
 
 public func -(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
@@ -53,4 +52,24 @@ public func *(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
 
 public func /(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
 	return CGPoint(x: lhs.x / rhs, y: lhs.y / rhs)
+}
+
+public func +=(lhs: inout CGPoint, rhs: CGPoint) {
+	lhs.x += rhs.x
+	lhs.y += rhs.y
+}
+
+public func -=(lhs: inout CGPoint, rhs: CGPoint) {
+	lhs.x -= rhs.x
+	lhs.y -= rhs.y
+}
+
+public func *=(lhs: inout CGPoint, rhs: CGFloat) {
+	lhs.x *= rhs
+	lhs.y *= rhs
+}
+
+public func /=(lhs: inout CGPoint, rhs: CGFloat) {
+	lhs.x /= rhs
+	lhs.y /= rhs
 }
