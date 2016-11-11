@@ -1,12 +1,12 @@
 use_frameworks!
 
 target 'CGMathSwift_Example' do
-  pod 'CGMathSwift', :path => '../'
+	pod 'CGMathSwift', :path => '../'
 
-  target 'CGMathSwift_Tests' do
-    inherit! :search_paths
+	target 'CGMathSwift_Tests' do
+		inherit! :search_paths
 
-    pod 'Quick', '~> 0.8'
-  pod 'Nimble', '~> 3.0'
-  end
+		#pod 'Quick', '~> 0.8'
+		#pod 'Nimble', '~> 3.0'
+	end
 end
