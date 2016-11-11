@@ -1,8 +1,12 @@
 PODS:
   - CGMathSwift (0.1.0)
+  - Nimble (5.0.0)
+  - Quick (0.10.0)
 
 DEPENDENCIES:
   - CGMathSwift (from `../`)
+  - Nimble (~> 5.0)
+  - Quick (~> 0.10.0)
 
 EXTERNAL SOURCES:
   CGMathSwift:
@@ -10,7 +14,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CGMathSwift: 75b2d9b18905f8aaf31664c9898c0631d12da5bc
+  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
 
-PODFILE CHECKSUM: 4401e5087cf2e58b9ae79057b76370fefe3143c9
+PODFILE CHECKSUM: 919b8e96cfbed8a1ec99104afc7276f0d68457f7
 
 COCOAPODS: 1.2.0.beta.1
