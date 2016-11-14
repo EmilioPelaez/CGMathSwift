@@ -8,35 +8,26 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CGMathSwift'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CGMathSwift.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.1.1'
+  s.summary          = 'A collection of extensions for CoreGraphics'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+CGMathSwift is a collection of extensions for CoreGraphics data types to help you perform calculations with them.
+
+For CGFloat, Float and Double types, it includes functions like lerp, inverse lerp, clamp and remap.
+
+It also adds basic math operations (+, -, *, /) to CGPoint, as well as lerp and other useful properties and initializers to CGPoint, CGSize and CGRect.
+
+These extensions are designed to make developing animations easier
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/CGMathSwift'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/EmilioPelaez/CGMathSwift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Emilio Peláez' => 'i.am@emiliopelaez.me' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/CGMathSwift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/EmilioPelaez/CGMathSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'CGMathSwift/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CGMathSwift' => ['CGMathSwift/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
