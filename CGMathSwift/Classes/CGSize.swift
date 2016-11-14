@@ -18,7 +18,7 @@ extension CGSize {
 		return width / height
 	}
 	
-	public init(aspectRatio: CGFloat, thatFitsSize size: CGSize) {
+	public init(aspectRatio: CGFloat, maxSize size: CGSize) {
 		let sizeRatio = size.aspectRatio
 		if aspectRatio > sizeRatio {
 			width = size.width

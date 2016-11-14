@@ -26,7 +26,7 @@ extension CGRect {
 		self.size = size
 	}
 	
-	public func rectWithAspectRatio(_ ratio: CGFloat) -> CGRect {
-		return CGRect(center: center, size: CGSize(aspectRatio: ratio, thatFitsSize: size))
+	public func withAspectRatio(_ ratio: CGFloat) -> CGRect {
+		return CGRect(center: center, size: CGSize(aspectRatio: ratio, maxSize: size))
 	}
 }
