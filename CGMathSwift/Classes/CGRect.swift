@@ -8,9 +8,9 @@
 
 import Foundation
 
-public func lerp(min: CGRect, max: CGRect, progress: CGFloat) -> CGRect {
-	let origin = lerp(min: min.origin, max: max.origin, progress: progress)
-	let size = lerp(min: min.size, max: max.size, progress: progress)
+public func lerp(start: CGRect, end: CGRect, progress: CGFloat) -> CGRect {
+	let origin = lerp(start: start.origin, end: end.origin, progress: progress)
+	let size = lerp(start: start.size, end: end.size, progress: progress)
 	return CGRect(origin: origin, size: size)
 }
 

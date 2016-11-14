@@ -8,9 +8,9 @@
 
 import Foundation
 
-public func lerp(min: CGPoint, max: CGPoint, progress: CGFloat) -> CGPoint {
-	return CGPoint(x: lerp(min: min.x, max: max.x, progress: progress),
-	               y: lerp(min: min.y, max: max.y, progress: progress))
+public func lerp(start: CGPoint, end: CGPoint, progress: CGFloat) -> CGPoint {
+	return CGPoint(x: lerp(start: start.x, end: end.x, progress: progress),
+	               y: lerp(start: start.y, end: end.y, progress: progress))
 }
 
 extension CGPoint {

@@ -8,12 +8,12 @@
 
 import Foundation
 
-public func lerp(min: Double, max: Double, progress: Double) -> Double {
-	return (1 - progress) * min + progress * max
+public func lerp(start: Double, end: Double, progress: Double) -> Double {
+	return (1 - progress) * start + progress * end
 }
 
-public func inverseLerp(min: Double, max: Double, value: Double) -> Double {
-	return (value - min) / (max - min)
+public func inverseLerp(start: Double, end: Double, value: Double) -> Double {
+	return (value - start) / (end - start)
 }
 
 extension Double {
@@ -22,7 +22,7 @@ extension Double {
 	}
 	
 	public func remap(fromRange from: (start: Double, end: Double), toRange to: (start: Double, end: Double)) -> Double {
-		let t = inverseLerp(min: from.start, max: from.end, value: self)
-		return lerp(min: to.start, max: to.end, progress: t)
+		let t = inverseLerp(start: from.start, end: from.end, value: self)
+		return lerp(start: to.start, end: to.end, progress: t)
 	}
 }

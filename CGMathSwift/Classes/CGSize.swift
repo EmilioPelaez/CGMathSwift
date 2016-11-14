@@ -8,9 +8,9 @@
 
 import Foundation
 
-public func lerp(min: CGSize, max: CGSize, progress: CGFloat) -> CGSize {
-	return CGSize(width: lerp(min: min.width, max: max.width, progress: progress),
-	              height: lerp(min: min.height, max: max.height, progress: progress))
+public func lerp(start: CGSize, end: CGSize, progress: CGFloat) -> CGSize {
+	return CGSize(width: lerp(start: start.width, end: end.width, progress: progress),
+	              height: lerp(start: start.height, end: end.height, progress: progress))
 }
 
 extension CGSize {

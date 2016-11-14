@@ -22,15 +22,15 @@ class FloatSpec: QuickSpec {
 			let progressMiddle: Float = (progressStart + progressEnd) / 2
 			
 			it("lerp") {
-				expect(lerp(min: start, max: end, progress: progressStart)) == start
-				expect(lerp(min: start, max: end, progress: progressMiddle)) == middle
-				expect(lerp(min: start, max: end, progress: progressEnd)) == end
+				expect(lerp(start: start, end: end, progress: progressStart)) == start
+				expect(lerp(start: start, end: end, progress: progressMiddle)) == middle
+				expect(lerp(start: start, end: end, progress: progressEnd)) == end
 			}
 			
 			it("inverseLerp") {
-				expect(inverseLerp(min: start, max: end, value: start)) == progressStart
-				expect(inverseLerp(min: start, max: end, value: middle)) == progressMiddle
-				expect(inverseLerp(min: start, max: end, value: end)) == progressEnd
+				expect(inverseLerp(start: start, end: end, value: start)) == progressStart
+				expect(inverseLerp(start: start, end: end, value: middle)) == progressMiddle
+				expect(inverseLerp(start: start, end: end, value: end)) == progressEnd
 			}
 			
 			it("remap") {
