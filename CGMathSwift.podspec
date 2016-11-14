@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CGMathSwift'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A collection of extensions for CoreGraphics'
 
   s.description      = <<-DESC
@@ -25,7 +25,7 @@ These extensions are designed to make developing animations easier
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Emilio Peláez' => 'i.am@emiliopelaez.me' }
   s.source           = { :git => 'https://github.com/EmilioPelaez/CGMathSwift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+	s.social_media_url = 'https://twitter.com/EmilioPelaez'
 
   s.ios.deployment_target = '8.0'
 
