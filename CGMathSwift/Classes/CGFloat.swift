@@ -16,7 +16,7 @@ public func inverseLerp(start: CGFloat, end: CGFloat, value: CGFloat) -> CGFloat
 	return (value - start) / (end - start)
 }
 
-extension CGFloat {
+public extension CGFloat {
 	public func clamp(min: CGFloat = 0, max: CGFloat = 1) -> CGFloat {
 		return CGMathSwift.clamp(value: self, min: min, max: max)
 	}

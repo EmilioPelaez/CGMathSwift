@@ -13,7 +13,7 @@ public func lerp(start: CGSize, end: CGSize, progress: CGFloat) -> CGSize {
 	              height: lerp(start: start.height, end: end.height, progress: progress))
 }
 
-extension CGSize {
+public extension CGSize {
 	public var aspectRatio: CGFloat {
 		return width / height
 	}

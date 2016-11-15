@@ -13,7 +13,7 @@ public func lerp(start: CGPoint, end: CGPoint, progress: CGFloat) -> CGPoint {
 	               y: lerp(start: start.y, end: end.y, progress: progress))
 }
 
-extension CGPoint {
+public extension CGPoint {
 	public var magnitude: CGFloat {
 		return sqrt(x * x + y * y)
 	}
@@ -29,11 +29,11 @@ extension CGPoint {
 		y /= m
 	}
 	
-	static func add(_ points: [CGPoint]) -> CGPoint {
+	public static func add(_ points: [CGPoint]) -> CGPoint {
 		return points.reduce(CGPoint.zero, +)
 	}
 	
-	static func average(_ points: [CGPoint]) -> CGPoint {
+	public static func average(_ points: [CGPoint]) -> CGPoint {
 		return CGPoint.add(points) / CGFloat(points.count)
 	}
 }
